@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.florent37.xebia.R;
+import com.github.florent37.xebia.adapter.BookAdapter;
 import com.github.florent37.xebia.model.Book;
 import com.squareup.picasso.Picasso;
 

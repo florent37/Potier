@@ -1,9 +1,11 @@
 package com.github.florent37.xebia.model;
 
+import java.io.Serializable;
+
 /**
  * Created by florentchampigny on 27/04/15.
  */
-public class Book {
+public class Book implements Serializable{
     private String isbn;
     private String title;
     private int price;

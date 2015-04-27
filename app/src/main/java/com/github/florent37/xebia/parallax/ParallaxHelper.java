@@ -28,7 +28,7 @@ public class ParallaxHelper {
     private View logo;
     private View toolbar;
 
-    public ParallaxHelper(View toolbar, View header, View logo){
+    public ParallaxHelper(View toolbar, View header, View logo) {
         this.logo = logo;
         this.header = header;
         this.toolbar = toolbar;
@@ -37,7 +37,7 @@ public class ParallaxHelper {
 
         maxScroll = logo.getContext().getResources().getDimension(R.dimen.parallaxHeaderHeight);
 
-        toolbarElevation = (int) dpToPx(4,logo.getContext());
+        toolbarElevation = (int) dpToPx(4, logo.getContext());
 
         this.finalTitleY = dpToPx(0f, logo.getContext());
         this.finalTitleX = dpToPx(15f, logo.getContext());
@@ -45,24 +45,28 @@ public class ParallaxHelper {
         this.originalTitleY = logo.getY();
     }
 
-    public void onScroll(int yOffset){
-        this.header.setTranslationY(-yOffset/1.5f);
+    public void onScroll(int yOffset) {
+        this.header.setTranslationY(-yOffset / 1.5f);
 
-        float percent = yOffset/maxScroll;
-        if(percent <= 1) {
+        float percent = yOffset / maxScroll;
+        if (percent > 1)
+            percent = 1;
+        {
             logo.setTranslationY((finalTitleY - originalTitleY) * percent);
             logo.setTranslationX((finalTitleX - originalTitleX) * percent);
 
-            float scale = (1-percent)*(1-finalScale) + finalScale;
+            float scale = (1 - percent) * (1 - finalScale) + finalScale;
 
             logo.setScaleX(scale);
             logo.setScaleY(scale);
 
-            toolbar.setBackgroundColor(colorWithAlpha(color,percent));
-            if(percent == 1) {
+            toolbar.setBackgroundColor(colorWithAlpha(color, percent));
+            if (percent == 1) {
                 ViewCompat.setElevation(toolbar, toolbarElevation);
-            }else{
+                ViewCompat.setElevation(logo, toolbarElevation);
+            } else {
                 ViewCompat.setElevation(toolbar, 0);
+                ViewCompat.setElevation(logo, 0);
             }
         }
     }

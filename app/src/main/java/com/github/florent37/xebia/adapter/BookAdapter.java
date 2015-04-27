@@ -16,15 +16,21 @@ import java.util.List;
  */
 public class BookAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    public interface BookClickListener{
+        public void onBookClicked(View view, Book book);
+    }
+
     private static final int TYPE_PLACEHOLDER = 0;
     private static final int TYPE_DEFAULT = 1;
 
     private static final int PLACEHOLDER_SIZE = 1;
 
     List<Book> bookList;
+    BookClickListener bookClickListener;
 
-    public BookAdapter(List<Book> bookList) {
+    public BookAdapter(List<Book> bookList, BookClickListener bookClickListener) {
         this.bookList = bookList;
+        this.bookClickListener = bookClickListener;
     }
 
     @Override
@@ -57,11 +63,20 @@ public class BookAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(final RecyclerView.ViewHolder holder, final int position) {
         switch (getItemViewType(position)){
             case TYPE_PLACEHOLDER:break;
             case TYPE_DEFAULT:
                 BookViewHolder.class.cast(holder).bindBook(getItem(position));
+
+                holder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if(bookClickListener != null){
+                            bookClickListener.onBookClicked(holder.itemView,getItem(holder.getAdapterPosition()));
+                        }
+                    }
+                });
                 break;
         }
     }

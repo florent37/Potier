@@ -52,6 +52,20 @@
             app:typeface="harry.ttf"
             />
 
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_colorNormal="#FF4081"
+            app:fab_colorPressed="#ffcc3366"
+            app:fab_colorRipple="#ffcc3366"
+            app:fab_showShadow="true"
+            android:src="@drawable/shopping"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:fab_size="normal"
+            android:layout_margin="10dp"
+            />
+
     </RelativeLayout>
 
     <include layout="@layout/drawer" />

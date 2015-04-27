@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
 
-    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
     </style>
 
     <!-- Base application theme. -->
@@ -22,6 +22,12 @@
         <item name="android:navigationBarColor" tools:targetApi="21">@color/navigationBarColor</item>
         <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>
 
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions" tools:targetApi="21">true</item>
+
+        <!-- enable overlapping of exiting and entering activities-->
+        <item name="android:windowAllowEnterTransitionOverlap" tools:targetApi="21">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap" tools:targetApi="21">true</item>
 
     </style>
 
