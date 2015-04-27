@@ -7,17 +7,17 @@
     <string name="transitionNameContent">content</string>
     <string name="transitionNameHeader">header</string>
 
-    <string name="book">Book</string>
+    <string name="book">Livre</string>
     <string name="transitionNameToolbar" >toolbar</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu interdum nisl, at convallis lacus. Praesent luctus ligula at pulvinar imperdiet. Nam libero ex, ornare in tortor in, pulvinar rhoncus magna. Suspendisse rhoncus vel erat et tempor. Nam ullamcorper diam at eleifend scelerisque. Sed cursus placerat volutpat. Nam fringilla, nunc pulvinar tempus euismod, dui eros cursus quam, quis sollicitudin ante libero in quam. Sed interdum dolor id velit vulputate pellentesque. Pellentesque luctus sem eu sapien eleifend laoreet.</string>
     <string name="description">Description</string>
-    <string name="price">Prce</string>
-    <string name="commander">ORDER</string>
+    <string name="price">Prix</string>
+    <string name="commander">COMMANDER</string>
     <string name="remove">Retirer</string>
-    <string name="de_reduction_immediate">of immediate reduction</string>
-    <string name="par_tranche_de">by</string>
+    <string name="de_reduction_immediate">de réduction immédiate</string>
+    <string name="par_tranche_de">par tranche de</string>
     <string name="email">champigny.florent@gmail.com</string>
-    <string name="name">Florent Champigny</string>
-    <string name="books">Books</string>
-    <string name="shopping">Order</string>
+    <string name="name">FlorentChampigny</string>
+    <string name="books">Livres</string>
+    <string name="shopping">Commande</string>
 </resources>
