@@ -58,6 +58,7 @@ public class MainActivity extends ActionBarActivity implements ParallaxHeaderAct
         drawerToggle = new ActionBarDrawerToggle(this, drawer, 0, 0);
         drawer.setDrawerListener(drawerToggle);
 
+        drawer.findViewById(R.id.left_drawer).setOnClickListener(this); //avoid scroll behind drawer
         drawer.findViewById(R.id.drawer_books).setOnClickListener(this);
         drawer.findViewById(R.id.drawer_pay).setOnClickListener(this);
         drawer.findViewById(R.id.drawer_settings).setOnClickListener(this);
