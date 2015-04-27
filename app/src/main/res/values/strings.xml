@@ -4,6 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="transitionNameImage">image</string>
+    <string name="transitionNameContent">content</string>
     <string name="transitionNameHeader">header</string>
 
     <string name="book">Livre</string>
@@ -11,4 +12,8 @@
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu interdum nisl, at convallis lacus. Praesent luctus ligula at pulvinar imperdiet. Nam libero ex, ornare in tortor in, pulvinar rhoncus magna. Suspendisse rhoncus vel erat et tempor. Nam ullamcorper diam at eleifend scelerisque. Sed cursus placerat volutpat. Nam fringilla, nunc pulvinar tempus euismod, dui eros cursus quam, quis sollicitudin ante libero in quam. Sed interdum dolor id velit vulputate pellentesque. Pellentesque luctus sem eu sapien eleifend laoreet.</string>
     <string name="description">Description</string>
     <string name="price">Prix</string>
+    <string name="commander">COMMANDER</string>
+    <string name="remove">Retirer</string>
+    <string name="de_reduction_immediate">de réduction immédiate</string>
+    <string name="par_tranche_de">par tranche de</string>
 </resources>

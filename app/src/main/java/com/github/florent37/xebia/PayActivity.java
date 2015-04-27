@@ -8,15 +8,15 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.transition.Slide;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.github.florent37.xebia.fragment.BookFragment;
+import com.github.florent37.xebia.fragment.PayFragment;
 import com.github.florent37.xebia.model.Book;
 
 
-public class DetailActivity extends ActionBarActivity {
+public class PayActivity extends ActionBarActivity{
 
     private Toolbar toolbar;
 
@@ -24,9 +24,11 @@ public class DetailActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_detail);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.purple));
+        }
 
-        Book book = (Book) getIntent().getExtras().getSerializable(BookFragment.EXTRA_BOOK);
+        setContentView(R.layout.activity_pay);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
@@ -45,22 +47,17 @@ public class DetailActivity extends ActionBarActivity {
         }
 
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setExitTransition(new Slide());
-        }
-
-
         supportPostponeEnterTransition();
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.contentView, BookFragment.newInstance(book))
+                .replace(R.id.contentView, PayFragment.newInstance())
                 .commit();
 
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
+        switch (item.getItemId()){
             case android.R.id.home:
                 onBackPressed();
                 return true;

@@ -1,118 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:tools="http://schemas.android.com/tools"
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <com.flaviofaria.kenburnsview.KenBurnsView
-            android:id="@+id/imageTop"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/parallaxHeaderHeight"
-            android:src="@drawable/sky"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
-            android:elevation="2dp"
-            android:transitionName="@string/transitionNameHeader" />
+            android:layout_height="wrap_content">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#6000"
-            android:layout_alignTop="@+id/textView"
-            android:layout_alignBottom="@+id/imageTop"
-            android:elevation="2dp" />
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:id="@+id/imageTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/parallaxHeaderHeight"
+                android:src="@drawable/sky"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:elevation="2dp"
+                android:transitionName="@string/transitionNameHeader" />
 
-        <com.github.florent37.xebia.view.TypefacedTextView
-            android:id="@+id/textView"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:layout_width="match_parent"
-            android:textColor="@android:color/white"
-            app:typeface="Roboto-Light.ttf"
-            android:textSize="20sp"
-            android:padding="10dp"
-            android:layout_toRightOf="@+id/imageView"
-            android:layout_alignBottom="@+id/imageTop"
-            android:elevation="4dp"
-            tools:text="Henri Potier à l'école des sorciers" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6000"
+                android:layout_alignTop="@+id/textView"
+                android:layout_alignBottom="@+id/imageTop"
+                android:elevation="2dp" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="120dp"
-            android:layout_height="170dp"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
-            android:layout_marginTop="60dp"
-            android:layout_marginLeft="20dp"
-            tools:src="@drawable/hp0"
-            android:elevation="4dp"
-            android:transitionName="@string/transitionNameImage" />
+            <com.github.florent37.xebia.view.TypefacedTextView
+                android:id="@+id/textView"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                app:typeface="Roboto-Light.ttf"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_alignBottom="@+id/imageTop"
+                android:elevation="4dp"
+                tools:text="Henri Potier à l'école des sorciers" />
 
-        <LinearLayout
-            android:layout_below="@+id/imageTop"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="10dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                tools:src="@drawable/hp0"
+                android:elevation="4dp"
+                android:transitionName="@string/transitionNameImage" />
 
             <LinearLayout
-                android:layout_marginTop="35dp"
+                android:layout_below="@+id/imageTop"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="15dp"
+                >
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/coins"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:alpha="0.3" />
-
-                <com.github.florent37.xebia.view.TypefacedTextView
+                <com.github.florent37.xebia.view.TypefacedButton
+                    android:id="@+id/commandButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:typeface="Roboto-Light.ttf"
-                    android:textSize="15sp"
+                    android:text="@string/commander"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp"
+                    app:typeface="Roboto-Black.ttf"
+                    android:textSize="18sp"
+                    android:textColor="@color/selector_button"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/coins"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:alpha="0.3" />
+
+                    <com.github.florent37.xebia.view.TypefacedTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:typeface="Roboto-Light.ttf"
+                        android:textSize="15sp"
+                        android:textColor="#6333"
+                        android:text="@string/price" />
+
+                    <com.github.florent37.xebia.view.TypefacedTextView
+                        android:id="@+id/textViewPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:typeface="Roboto-Bold.ttf"
+                        android:gravity="right"
+                        android:textSize="19sp"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#9333"
+                        android:text="3€" />
+                </LinearLayout>
+
+                <com.github.florent37.xebia.view.TypefacedTextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:typeface="Roboto-Black.ttf"
+                    android:textSize="17sp"
                     android:textColor="#6333"
-                    android:text="@string/price" />
+                    android:text="@string/description" />
 
                 <com.github.florent37.xebia.view.TypefacedTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:typeface="Roboto-Bold.ttf"
-                    android:gravity="right"
-                    android:textSize="19sp"
-                    android:layout_marginRight="5dp"
-                    android:textColor="#9333"
-                    android:text="3€" />
+                    app:typeface="Roboto-Regular.ttf"
+                    android:textSize="14sp"
+                    android:text="@string/lorem" />
             </LinearLayout>
 
-            <com.github.florent37.xebia.view.TypefacedTextView
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:typeface="Roboto-Black.ttf"
-                android:textSize="17sp"
-                android:textColor="#6333"
-                android:text="@string/description" />
 
-            <com.github.florent37.xebia.view.TypefacedTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:typeface="Roboto-Regular.ttf"
-                android:textSize="14sp"
-                android:text="@string/lorem" />
-        </LinearLayout>
+        </RelativeLayout>
 
+    </ScrollView>
 
-    </RelativeLayout>
-</ScrollView>
+</RelativeLayout>

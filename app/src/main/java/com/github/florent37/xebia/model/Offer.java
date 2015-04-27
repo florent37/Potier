@@ -36,4 +36,13 @@ public class Offer {
     public void setValue(int value) {
         this.value = value;
     }
+
+    @Override
+    public String toString() {
+        return "Offer{" +
+                "type='" + type + '\'' +
+                ", sliceValue=" + sliceValue +
+                ", value=" + value +
+                '}';
+    }
 }

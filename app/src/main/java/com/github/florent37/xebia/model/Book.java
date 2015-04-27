@@ -11,6 +11,23 @@ public class Book implements Serializable{
     private int price;
     private String cover;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Book)) return false;
+
+        Book book = (Book) o;
+
+        if (isbn != null ? !isbn.equals(book.isbn) : book.isbn != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return isbn != null ? isbn.hashCode() : 0;
+    }
+
     public String getIsbn() {
         return isbn;
     }

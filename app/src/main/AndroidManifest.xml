@@ -22,6 +22,10 @@
             android:name=".DetailActivity"
             android:label="@string/book" >
         </activity>
+        <activity
+            android:name=".PayActivity"
+            android:label="" >
+        </activity>
     </application>
 
 </manifest>

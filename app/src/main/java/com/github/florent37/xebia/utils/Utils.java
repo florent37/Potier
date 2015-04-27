@@ -3,6 +3,7 @@ package com.github.florent37.xebia.utils;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.os.Build;
 import android.util.DisplayMetrics;
 
 /**
@@ -22,5 +23,8 @@ public class Utils {
         int alpha = Math.round(percent*255);
 
         return Color.argb(alpha,r,g,b);
+    }
+    public static boolean isLolipop(){
+        return (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP);
     }
 }
