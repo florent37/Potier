@@ -1,28 +1,21 @@
 package com.github.florent37.xebia;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.util.Pair;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
-import android.transition.Explode;
-import android.transition.Fade;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
 import com.github.florent37.xebia.fragment.BookListFragment;
 import com.github.florent37.xebia.parallax.ParallaxHeaderActivity;
 import com.github.florent37.xebia.parallax.ParallaxHelper;
-
-import static com.github.florent37.xebia.utils.Utils.isLolipop;
 
 
 public class MainActivity extends ActionBarActivity implements ParallaxHeaderActivity, View.OnClickListener {
@@ -65,6 +58,10 @@ public class MainActivity extends ActionBarActivity implements ParallaxHeaderAct
         drawerToggle = new ActionBarDrawerToggle(this, drawer, 0, 0);
         drawer.setDrawerListener(drawerToggle);
 
+        drawer.findViewById(R.id.drawer_books).setOnClickListener(this);
+        drawer.findViewById(R.id.drawer_pay).setOnClickListener(this);
+        drawer.findViewById(R.id.drawer_settings).setOnClickListener(this);
+
         fabPay = findViewById(R.id.fab_pay);
         fabPay.setOnClickListener(this);
 
@@ -106,17 +103,24 @@ public class MainActivity extends ActionBarActivity implements ParallaxHeaderAct
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.fab_pay:
+            case R.id.drawer_pay:
+                drawer.closeDrawers();
                 startPayActivity();
+                break;
+            case R.id.drawer_books:
+                drawer.closeDrawers();
+                break;
+            case R.id.drawer_settings:
                 break;
         }
     }
 
-    private void startPayActivity(){
+    private void startPayActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
             getWindow().setExitTransition(null);
 
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
-                this,null
+                this, null
         );
 
         Intent intent = new Intent(this, PayActivity.class);

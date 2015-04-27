@@ -6,6 +6,9 @@
     <color name="fab_color">#FF4081</color>
     <color name="fab_color_pressed">#ffcc3366</color>
 
+    <color name="light_gray">#CCCCCC</color>
+    <color name="light_gray_with_alpha">#3c6f6868</color>
+
     <color name="accent_color">@color/indigo</color>
     <color name="colorPrimary">@color/indigo</color>
     <color name="colorPrimaryDark">@color/indigo</color>

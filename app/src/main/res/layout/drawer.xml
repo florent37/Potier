@@ -1,8 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<View xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/left_drawer"
     android:layout_width="320dp"
     android:layout_height="match_parent"
     android:layout_gravity="start"
-    android:background="@android:color/white"
-     />
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/material_background" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:src="@drawable/florent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="vertical"
+            android:background="@drawable/gradient_black_vertical"
+            android:paddingLeft="16sp"
+            android:layout_alignParentBottom="true">
+
+            <com.github.florent37.xebia.view.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5sp"
+                app:typeface="Roboto-Medium.ttf"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="@string/name" />
+
+            <com.github.florent37.xebia.view.TypefacedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                app:typeface="Roboto-Regular.ttf"
+                android:layout_marginTop="3sp"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="@string/email" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/drawer_books"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_book">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:alpha="0.6"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_book_black_48dp" />
+
+        <com.github.florent37.xebia.view.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            app:typeface="Roboto-Medium.ttf"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="72dp"
+            android:alpha="0.87"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="@string/books" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/drawer_pay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_book">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:alpha="0.6"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_shopping_cart_black_48dp" />
+
+        <com.github.florent37.xebia.view.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            app:typeface="Roboto-Medium.ttf"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="72dp"
+            android:alpha="0.87"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="@string/shopping" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_marginTop="8px"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#AAA"
+        />
+    
+    <FrameLayout
+        android:id="@+id/drawer_settings"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/selector_book">
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_settings_grey600_48dp" />
+
+        <com.github.florent37.xebia.view.TypefacedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            app:typeface="Roboto-Medium.ttf"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="72dp"
+            android:alpha="0.87"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="@string/settings" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

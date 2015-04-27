@@ -2,7 +2,7 @@
     <string name="app_name">Xebia</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="settings">Parametres</string>
     <string name="transitionNameImage">image</string>
     <string name="transitionNameContent">content</string>
     <string name="transitionNameHeader">header</string>
@@ -16,4 +16,8 @@
     <string name="remove">Retirer</string>
     <string name="de_reduction_immediate">de réduction immédiate</string>
     <string name="par_tranche_de">par tranche de</string>
+    <string name="email">champigny.florent@gmail.com</string>
+    <string name="name">FlorentChampigny</string>
+    <string name="books">Livres</string>
+    <string name="shopping">Commande</string>
 </resources>
