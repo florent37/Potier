@@ -63,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:orientation="horizontal"
-        android:background="@drawable/selector_book">
+        android:background="@drawable/selector_light">
 
         <ImageView
             android:layout_marginLeft="16dp"
@@ -92,7 +92,7 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:orientation="horizontal"
-        android:background="@drawable/selector_book">
+        android:background="@drawable/selector_light">
 
         <ImageView
             android:layout_marginLeft="16dp"
@@ -129,7 +129,7 @@
         android:layout_height="48dp"
         android:orientation="horizontal"
         android:layout_gravity="bottom"
-        android:background="@drawable/selector_book">
+        android:background="@drawable/selector_light">
 
         <ImageView
             android:layout_marginLeft="16dp"

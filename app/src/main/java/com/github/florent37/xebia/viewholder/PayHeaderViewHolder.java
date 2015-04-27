@@ -35,8 +35,8 @@ public class PayHeaderViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void setInitialPrice(float price) {
-        if(price == 0) //only first time
-            textViewPrice.setText(initialPrice + " €");
+        if(initialPrice == 0) //only first time
+            textViewPrice.setText(price + " €");
         if (price != initialPrice) {
             this.initialPrice = price;
         }
