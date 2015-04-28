@@ -98,7 +98,7 @@ public class BookCommandAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
     @Override
     public int getItemCount() {
-        return bookList.size();
+        return bookList.size()+HEADER_SIZE;
     }
 
     public PayHeaderViewHolder getHeaderViewHolder() {
