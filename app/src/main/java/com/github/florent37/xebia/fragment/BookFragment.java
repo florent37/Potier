@@ -33,6 +33,11 @@ public class BookFragment extends Fragment implements View.OnClickListener {
 
     private IBookSession bookSession;
 
+    /**
+     * Create a new instance of BookFragment
+     * @param book
+     * @return
+     */
     public static Fragment newInstance(Book book) {
         Bundle args = new Bundle();
         args.putSerializable(EXTRA_BOOK, book);
@@ -41,6 +46,10 @@ public class BookFragment extends Fragment implements View.OnClickListener {
         return fragment;
     }
 
+    /**
+     * Retrieve the book from arguments
+     * @param savedInstanceState
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,6 +80,8 @@ public class BookFragment extends Fragment implements View.OnClickListener {
 
         textView.setText(book.getTitle());
         textViewPrice.setText(book.getPrice()+" €");
+
+        //when the image is loaded, start the transition
         Picasso.with(getActivity()).load(book.getCover()).fit().centerCrop().into(imageView, new Callback() {
             @Override
             public void onSuccess() {
@@ -88,6 +99,9 @@ public class BookFragment extends Fragment implements View.OnClickListener {
         loadCommandedButton();
     }
 
+    /**
+     * Modify the content of Command Button according to bookSession.isCommanded(book)
+     */
     private void loadCommandedButton(){
         if(bookSession.isCommanded(book)){
             commander.setText(R.string.remove);

@@ -13,6 +13,9 @@ import java.util.List;
 
 /**
  * Created by florentchampigny on 27/04/15.
+ *
+ * An adapter to display books, used in HomeAcitvity,
+ * so I added a Placeholder on top to enable parallax
  */
 public class BookAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 

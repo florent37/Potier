@@ -12,9 +12,11 @@ import retrofit.client.Response;
 
 /**
  * Created by florentchampigny on 27/04/15.
+ * A task to simplify webservice call
  */
 public class GetBooksTask {
 
+    //callback to implement from caller
     public interface GetBooksTaskCallBack{
         public void onBooksReceived(List<Book> bookList);
         public void onNetworkError();
@@ -27,6 +29,7 @@ public class GetBooksTask {
     }
 
     public void execute(){
+        //use retrofit service
         HenriPotierWebService.getService().getBooks(new Callback<List<Book>>() {
             @Override
             public void success(List<Book> books, Response response) {

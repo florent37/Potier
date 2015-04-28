@@ -48,6 +48,10 @@ public class PayFragment extends Fragment implements BookCommandAdapter.BookClic
 
     private List<Book> bookList = new ArrayList<>();
 
+    /**
+     * Create a new instance of BookFragment
+     * @return
+     */
     public static Fragment newInstance() {
         Fragment fragment = new PayFragment();
         return fragment;
@@ -83,6 +87,8 @@ public class PayFragment extends Fragment implements BookCommandAdapter.BookClic
     @Override
     public void onResume() {
         super.onResume();
+
+        //when resumed, the user may changed the list of commanded books, so update
         if(adapter != null) {
             bookList.clear();
             bookList.addAll(bookSession.getCommandedBooks());
@@ -92,6 +98,7 @@ public class PayFragment extends Fragment implements BookCommandAdapter.BookClic
                 adapter.getHeaderViewHolder().setInitialPrice(CommercialUtils.getPrice(this.bookList));
         }
 
+        //get datas from webservice
         new GetCommercialOffersTask(this).execute(this.bookList);
     }
 
@@ -100,6 +107,8 @@ public class PayFragment extends Fragment implements BookCommandAdapter.BookClic
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
             getActivity().getWindow().setExitTransition(null);
+
+        //create a shared transition (with Support) moving the clicked ImageView
 
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                 getActivity(),

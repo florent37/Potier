@@ -13,9 +13,11 @@ import retrofit.client.Response;
 
 /**
  * Created by florentchampigny on 27/04/15.
+ * A task to simplify webservice call
  */
 public class GetCommercialOffersTask {
 
+    //callback to implement on caller
     public interface GetCommercialOfferTaskCallBack{
         public void onCommercialOfferReceived(List<Offer> offers);
         public void onNetworkError();
@@ -27,6 +29,10 @@ public class GetCommercialOffersTask {
         this.callBack = callBack;
     }
 
+    /**
+     * Create ISBNS string with , betweet
+     * @return
+     */
     private String getIsbnsFromBooks(List<Book> books){
         StringBuilder stringBuilder = new StringBuilder();
         int size = books.size();
@@ -43,6 +49,7 @@ public class GetCommercialOffersTask {
 
             String isbns = getIsbnsFromBooks(books);
 
+            //use retrofit service
             HenriPotierWebService.getService().getCommercialOffers(isbns,new Callback<OfferEnvelope>() {
                 @Override
                 public void success(OfferEnvelope offerEnvelope, Response response) {

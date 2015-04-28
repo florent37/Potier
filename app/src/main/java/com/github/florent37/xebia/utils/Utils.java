@@ -10,12 +10,26 @@ import android.util.DisplayMetrics;
  * Created by florentchampigny on 27/04/15.
  */
 public class Utils {
+
+    /**
+     * Convert dp to px
+     * @param dp
+     * @param context
+     * @return
+     */
     public static float dpToPx(float dp, Context context) {
         Resources resources = context.getResources();
         DisplayMetrics metrics = resources.getDisplayMetrics();
         float px = dp * (metrics.densityDpi / 160f);
         return px;
     }
+
+    /**
+     * Create a color with alpha (percent) + given color
+     * @param color
+     * @param percent
+     * @return
+     */
     public static int colorWithAlpha(int color, float percent){
         int r = Color.red(color);
         int g = Color.green(color);

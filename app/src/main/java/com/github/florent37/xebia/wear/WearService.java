@@ -18,9 +18,14 @@ import java.util.List;
 
 /**
  * Created by florentchampigny on 27/04/15.
+ *
+ * Wearable Service
  */
 public class WearService extends EmmetWearableListenerService implements WearProtocolSmartphone, GetBooksTask.GetBooksTaskCallBack {
 
+    /**
+     * Used to simplify communication betweet wear-smartphone
+     */
     WearProtocol sender;
 
     @Override
@@ -32,11 +37,13 @@ public class WearService extends EmmetWearableListenerService implements WearPro
         sender = emmet.createSender(WearProtocol.class);
     }
 
+    //sent by wear
     @Override
     public void onConnected() {
         new GetBooksTask(this).execute();
     }
 
+    //sent by wear
     @Override
     public void onBooksReceived(List<Book> bookList) {
 

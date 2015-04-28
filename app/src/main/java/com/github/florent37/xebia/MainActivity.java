@@ -95,6 +95,7 @@ public class MainActivity extends ActionBarActivity implements ParallaxHeaderAct
         drawerToggle.syncState();
     }
 
+    //dispatch the scroll to the parallaxHelper
     @Override
     public void onParallaxScroll(int yOffset) {
         if (parallaxHelper != null) {
@@ -129,6 +130,7 @@ public class MainActivity extends ActionBarActivity implements ParallaxHeaderAct
     }
 
     private void startPayActivity() {
+        //start activity with shared transition
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
             getWindow().setExitTransition(null);
 

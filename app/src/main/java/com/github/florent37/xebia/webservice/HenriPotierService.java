@@ -11,6 +11,7 @@ import retrofit.http.Path;
 
 /**
  * Created by florentchampigny on 27/04/15.
+ * Henri Potier Xebia Webservice
  */
 public interface HenriPotierService {
 

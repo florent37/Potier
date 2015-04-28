@@ -11,8 +11,15 @@ import java.util.List;
 
 /**
  * Created by florentchampigny on 27/04/15.
+ * Used to compute price
  */
 public class CommercialUtils {
+
+    /**
+     * Comute the total price from Book List
+     * @param bookList
+     * @return
+     */
     public static float getPrice(List<Book> bookList) {
         float price = 0;
         if (bookList != null) {
@@ -24,6 +31,12 @@ public class CommercialUtils {
         return price;
     }
 
+    /**
+     * Try to return the best offer
+     * @param bookList
+     * @param offers
+     * @return
+     */
     public static CommercialOffer getBestOffer(List<Book> bookList, List<Offer> offers) {
         float price = getPrice(bookList);
 
@@ -48,6 +61,7 @@ public class CommercialUtils {
             bestOffers.add(new CommercialOffer(thisPrice,offer));
         }
 
+        //return the min price
         CommercialOffer min = Collections.min(bestOffers);
 
         return min;

@@ -13,6 +13,8 @@ import java.util.List;
 
 /**
  * Created by florentchampigny on 27/04/15.
+ * Implementation of API to manage commanded Books
+ * Saving into SharedPReferences with GSON
  */
 public class BookSessionSharedPreferences implements IBookSession {
 

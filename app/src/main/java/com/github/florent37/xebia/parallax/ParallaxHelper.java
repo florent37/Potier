@@ -10,6 +10,7 @@ import static com.github.florent37.xebia.utils.Utils.dpToPx;
 
 /**
  * Created by florentchampigny on 27/04/15.
+ * This class enable parallax header on the MainActivity
  */
 public class ParallaxHelper {
 

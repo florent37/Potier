@@ -22,6 +22,9 @@ import com.google.android.gms.wearable.Wearable;
 
 import java.util.List;
 
+/**
+ * Wearable MainActivity
+ */
 public class MainActivity extends Activity implements WearProtocol {
 
     private final static String TAG = MainActivity.class.getCanonicalName();
@@ -31,6 +34,9 @@ public class MainActivity extends Activity implements WearProtocol {
 
     private List<WearBook> bookList;
 
+    /**
+     * Used to simplify communication betweet wear-smartphone
+     */
     private Emmet emmet = new Emmet();
 
     @Override
@@ -66,6 +72,7 @@ public class MainActivity extends Activity implements WearProtocol {
         });
     }
 
+    //sent by smartphone
     @Override
     public void onBooksLoaded(List<WearBook> wearBookList) {
         this.bookList = wearBookList;

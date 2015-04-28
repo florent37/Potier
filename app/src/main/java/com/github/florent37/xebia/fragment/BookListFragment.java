@@ -45,6 +45,10 @@ public class BookListFragment extends Fragment implements GetBooksTask.GetBooksT
 
     private ParallaxHeaderActivity parallaxHeaderActivity;
 
+    /**
+     * Create a new instance of BookListFragment
+     * @return
+     */
     public static Fragment newInstance() {
         return new BookListFragment();
     }
@@ -66,22 +70,25 @@ public class BookListFragment extends Fragment implements GetBooksTask.GetBooksT
         super.onViewCreated(view, savedInstanceState);
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
 
-        boolean isLandscape = getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
+        //display 3 cards on landscape / 2 on portrait
+        {
+            boolean isLandscape = getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE;
 
-        final int numberPerLine = isLandscape? 3 : 2;
-        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), numberPerLine);
-        layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-            @Override
-            public int getSpanSize(int position) {
-                switch (position) {
-                    case 0:
-                        return numberPerLine;
-                    default:
-                        return 1;
+            final int numberPerLine = isLandscape ? 3 : 2;
+            GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), numberPerLine);
+            layoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+                @Override
+                public int getSpanSize(int position) {
+                    switch (position) {
+                        case 0:
+                            return numberPerLine;
+                        default:
+                            return 1;
+                    }
                 }
-            }
-        });
-        recyclerView.setLayoutManager(layoutManager);
+            });
+            recyclerView.setLayoutManager(layoutManager);
+        }
 
         adapter = new BookAdapter(bookList, this);
         recyclerView.setAdapter(adapter);
@@ -90,9 +97,11 @@ public class BookListFragment extends Fragment implements GetBooksTask.GetBooksT
             parallaxScroll();
         }
 
+        //get datas from webservice
         new GetBooksTask(this).execute();
     }
 
+    //dispatch the scroll on the parallaxHeaderActivity
     private void parallaxScroll() {
         this.recyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
 
@@ -116,6 +125,8 @@ public class BookListFragment extends Fragment implements GetBooksTask.GetBooksT
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
             getActivity().getWindow().setExitTransition(null);
+
+        //create a shared transition (with Support) moving the clicked ImageView
 
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(
                 getActivity(),

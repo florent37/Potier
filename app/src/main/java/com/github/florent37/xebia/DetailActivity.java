@@ -26,6 +26,7 @@ public class DetailActivity extends ActionBarActivity {
 
         setContentView(R.layout.activity_detail);
 
+        //retrieve book from extra
         Book book = (Book) getIntent().getExtras().getSerializable(BookFragment.EXTRA_BOOK);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -49,7 +50,7 @@ public class DetailActivity extends ActionBarActivity {
             getWindow().setExitTransition(new Slide());
         }
 
-
+        //postpone the transition
         supportPostponeEnterTransition();
 
         getSupportFragmentManager().beginTransaction()

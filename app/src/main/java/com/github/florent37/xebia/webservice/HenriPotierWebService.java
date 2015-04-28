@@ -12,6 +12,10 @@ public class HenriPotierWebService {
 
     public static final String TAG = HenriPotierWebService.class.getSimpleName();
 
+    /**
+     * Return a HenriPotierService implementation from Retrofit
+     * @return
+     */
     public static HenriPotierService getService() {
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setEndpoint(HenriPotierService.ENDPOINT)

@@ -16,6 +16,9 @@ import java.util.List;
 
 /**
  * Created by florentchampigny on 27/04/15.
+ *
+ * An adapter to display books, used in PayActivity,
+ * so I keep the instance of header to access it from the fragment
  */
 public class BookCommandAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 

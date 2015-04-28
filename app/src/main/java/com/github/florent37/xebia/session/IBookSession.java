@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * Created by florentchampigny on 27/04/15.
+ * Abstract API to manage commanded Books
  */
 public interface IBookSession {
 
