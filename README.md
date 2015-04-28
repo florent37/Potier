@@ -1,6 +1,8 @@
 Potier
 =======
 
+##Designed for Android Lollipop
+
 [![Build Status](https://travis-ci.org/florent37/Emmet.svg)](https://travis-ci.org/florent37/Emmet)
 
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/home1_small.png)
@@ -8,6 +10,8 @@ Potier
 
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/detail_small.png)
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/command_small.png)
+
+##With an Android Wear Module
 
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/wear1_small.png)
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/wear2_small.png)
@@ -19,7 +23,6 @@ Dependencies
 - Retrofit : [https://github.com/square/retrofit](https://github.com/square/retrofit)
 - KenBurnsView : [https://github.com/flavioarfaria/KenBurnsView](https://github.com/flavioarfaria/KenBurnsView)
 - AndroidMaskableLayout : [https://github.com/christophesmet/android_maskable_layout](https://github.com/christophesmet/android_maskable_layout)
-
 - Emmet : [https://github.com/florent37/Emmet](https://github.com/florent37/Emmet)
 - DaVinci : [https://github.com/florent37/DaVinci](https://github.com/florent37/DaVinci)
 

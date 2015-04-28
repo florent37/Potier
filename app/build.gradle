@@ -10,10 +10,39 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    File signFile = project.file('keyInfos.properties')
+    if (signFile.exists()) {
+        Properties properties = new Properties()
+        properties.load(new FileInputStream(signFile))
+        signingConfigs {
+            release {
+                storeFile file(project.file(properties['keystore.filename']))
+                storePassword properties['keystore.password']
+                keyAlias properties['keystore.alias']
+                keyPassword properties['keystore.password']
+            }
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+
+            if (signFile.exists())
+                signingConfig signingConfigs.release
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
         }
     }
 }
