@@ -3,7 +3,7 @@ Potier
 
 ##Designed for Android Lollipop
 
-[![Build Status](https://travis-ci.org/florent37/Emmet.svg)](https://travis-ci.org/florent37/Emmet)
+[![Build Status](https://travis-ci.org/florent37/Potier.svg)](https://travis-ci.org/florent37/Potier)
 
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/home1_small.png)
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/home2_small.png)
@@ -15,6 +15,10 @@ Potier
 
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/wear1_small.png)
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/wear2_small.png)
+
+##Download
+
+Download the apk : [Link](https://github.com/florent37/Potier/releases/download/1.0/app-release.apk)
 
 Dependencies
 --------
