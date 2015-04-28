@@ -28,7 +28,7 @@ public class BookGridPagerAdapter extends FragmentGridPagerAdapter {
 
         for (WearBook book : this.bookList) {
             mRows.add(new Row(
-                            CardFragment.create(book.getTitle(), book.getPrice() + " €")
+                            BookFragment.newInstance(book.getTitle())
                     )
             );
         }

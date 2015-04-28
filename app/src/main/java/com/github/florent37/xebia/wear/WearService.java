@@ -43,7 +43,7 @@ public class WearService extends EmmetWearableListenerService implements WearPro
         new GetBooksTask(this).execute();
     }
 
-    //sent by wear
+    //from webservice
     @Override
     public void onBooksReceived(List<Book> bookList) {
 

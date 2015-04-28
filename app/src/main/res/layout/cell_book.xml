@@ -43,7 +43,8 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:textColor="#9333"
-                app:typeface="Roboto-Light.ttf"
+                app:typeface="Roboto-Thin.ttf"
+                android:fontFamily="sans-serif-thin"
                 android:textSize="14sp"
                 tools:text="Henri Potier à l'école des sorciers" />
 
