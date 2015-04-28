@@ -3,11 +3,11 @@ Potier
 
 [![Build Status](https://travis-ci.org/florent37/Emmet.svg)](https://travis-ci.org/florent37/Emmet)
 
-![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/home1.png)
-![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/home2.png)
+![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/home1_small.png)
+![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/home2_small.png)
 
-![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/command.png)
-![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/detail.png)
+![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/command_small.png)
+![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/detail_small.png)
 
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/wear1.png)
 ![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/wear2.png)

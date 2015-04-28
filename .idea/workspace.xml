@@ -40,15 +40,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="426de23a-1aa5-435d-a0bb-47b5a84b09b1" name="Default" comment="updates README">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/command.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/detail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/home1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/home2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/wear1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/wear2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Xebia.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,8 +69,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84841627" vertical-offset="240" max-vertical-offset="1050">
-              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.30542988" vertical-offset="0" max-vertical-offset="1050">
+              <caret line="9" column="95" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
               <folding />
             </state>
           </provider>
@@ -2813,6 +2805,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="screenshots" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Potier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Potier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -4027,8 +4033,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84841627" vertical-offset="240" max-vertical-offset="1050">
-          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.30542988" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="9" column="95" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
           <folding />
         </state>
       </provider>
