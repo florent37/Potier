@@ -39,14 +39,15 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.github.florent37.xebia" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="426de23a-1aa5-435d-a0bb-47b5a84b09b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wearable/build.gradle" afterPath="$PROJECT_DIR$/wearable/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wearprotocol/build.gradle" afterPath="$PROJECT_DIR$/wearprotocol/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wearable/wearable.iml" afterPath="$PROJECT_DIR$/wearable/wearable.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wearprotocol/wearprotocol.iml" afterPath="$PROJECT_DIR$/wearprotocol/wearprotocol.iml" />
+    <list default="true" id="426de23a-1aa5-435d-a0bb-47b5a84b09b1" name="Default" comment="updates README">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/command.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/detail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/home1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/home2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/wear1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshots/wear2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Xebia.iws" />
@@ -76,8 +77,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45701358" vertical-offset="98" max-vertical-offset="1170">
-              <caret line="20" column="144" selection-start-line="20" selection-start-column="144" selection-end-line="20" selection-end-column="144" />
+            <state vertical-scroll-proportion="0.84841627" vertical-offset="240" max-vertical-offset="1050">
+              <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -3548,7 +3549,11 @@
       <created>1430221521148</created>
       <updated>1430221521148</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updates README">
+      <created>1430222097238</created>
+      <updated>1430222097238</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3608,7 +3613,8 @@
     <MESSAGE value="added comments" />
     <MESSAGE value="custom book fragment on wear" />
     <MESSAGE value="fixed book adapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed book adapter" />
+    <MESSAGE value="updates README" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4021,8 +4027,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45701358" vertical-offset="98" max-vertical-offset="1170">
-          <caret line="20" column="144" selection-start-line="20" selection-start-column="144" selection-end-line="20" selection-end-column="144" />
+        <state vertical-scroll-proportion="0.84841627" vertical-offset="240" max-vertical-offset="1050">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
           <folding />
         </state>
       </provider>

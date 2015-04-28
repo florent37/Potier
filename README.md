@@ -3,14 +3,14 @@ Potier
 
 [![Build Status](https://travis-ci.org/florent37/Emmet.svg)](https://travis-ci.org/florent37/Emmet)
 
-![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshot/home1.png)
-![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshot/home2.png)
+![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/home1.png)
+![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/home2.png)
 
-![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshot/command.png)
-![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshot/detail.png)
+![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/command.png)
+![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/detail.png)
 
-![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshot/wear1.png)
-![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshot/wear2.png)
+![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/wear1.png)
+![Alt image](https://raw.githubusercontent.com/florent37/Potier/master/screenshots/wear2.png)
 
 Dependencies
 --------
@@ -39,14 +39,6 @@ Author: Florent Champigny
 <a href="https://www.linkedin.com/profile/view?id=297860624">
   <img alt="Follow me on LinkedIn"
        src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/linkedin.png" />
-</a>
-
-
-Pictures by Logan Bourgouin
-
-<a href="https://plus.google.com/+LoganBOURGOIN">
-  <img alt="Follow me on Google+"
-       src="https://raw.githubusercontent.com/florent37/DaVinci/master/mobile/src/main/res/drawable-hdpi/gplus.png" />
 </a>
 
 License
