@@ -39,7 +39,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.github.florent37.xebia" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="426de23a-1aa5-435d-a0bb-47b5a84b09b1" name="Default" comment="updates README" />
+    <list default="true" id="426de23a-1aa5-435d-a0bb-47b5a84b09b1" name="Default" comment="updates README">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="Xebia.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,8 +69,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30542988" vertical-offset="0" max-vertical-offset="1050">
-              <caret line="9" column="100" selection-start-line="9" selection-start-column="100" selection-end-line="9" selection-end-column="100" />
+            <state vertical-scroll-proportion="0.40723982" vertical-offset="0" max-vertical-offset="1050">
+              <caret line="12" column="94" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -4031,8 +4033,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30542988" vertical-offset="0" max-vertical-offset="1050">
-          <caret line="9" column="100" selection-start-line="9" selection-start-column="100" selection-end-line="9" selection-end-column="100" />
+        <state vertical-scroll-proportion="0.40723982" vertical-offset="0" max-vertical-offset="1050">
+          <caret line="12" column="94" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="94" />
           <folding />
         </state>
       </provider>
