@@ -12,7 +12,7 @@ import retrofit.RestAdapter;
  */
 public class HenriPotierWebService {
 
-    public static final String TAG = HenriPotierWebService.class.getSimpleName();
+    public static final String TAG = "HenriPotierWebService";
 
     private static HenriPotierService INSTANCE;
 

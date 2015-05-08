@@ -37,7 +37,7 @@ import butterknife.InjectView;
  */
 public class PayFragment extends Fragment implements BookCommandAdapter.BookClickListener, GetCommercialOffersTask.GetCommercialOfferTaskCallBack {
 
-    private static final String TAG = PayFragment.class.getSimpleName();
+    private static final String TAG = "PayFragment";
     @InjectView(R.id.recyclerView) RecyclerView recyclerView;
     private BookCommandAdapter adapter;
 
