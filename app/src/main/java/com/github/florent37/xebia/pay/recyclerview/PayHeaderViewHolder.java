@@ -83,29 +83,16 @@ public class PayHeaderViewHolder extends RecyclerView.ViewHolder {
     }
 
     private String getTextReduction(Offer offer) {
-        StringBuilder sb = new StringBuilder();
         switch (offer.getType()) {
             case Offer.TYPE_SLICE:
-                sb.append("-")
-                        .append(offer.getValue())
-                        .append("€ ")
-                        .append(itemView.getResources().getString(R.string.par_tranche_de))
-                        .append(offer.getSliceValue())
-                        .append("€");
-                break;
+                return itemView.getContext().getString(R.string.par_tranche_de,offer.getValue(),offer.getSliceValue());
             case Offer.TYPE_PERCENTAGE:
-                sb.append(offer.getValue())
-                        .append("% ")
-                        .append(itemView.getResources().getString(R.string.de_reduction_immediate));
-                break;
+                return itemView.getContext().getString(R.string.pourcent_de_reduction_immediate,offer.getValue());
             case Offer.TYPE_MINUS:
-                sb.append((initialPrice - finalPrice))
-                        .append("€ ")
-                        .append(itemView.getResources().getString(R.string.de_reduction_immediate));
-                break;
+                return itemView.getContext().getString(R.string.euros_reduction_immediate,(initialPrice - finalPrice));
         }
 
-        return sb.toString();
+        return "";
     }
 
 }

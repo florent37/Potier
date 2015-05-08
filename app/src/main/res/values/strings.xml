@@ -14,8 +14,9 @@
     <string name="price">Prce</string>
     <string name="commander">ORDER</string>
     <string name="remove">Retirer</string>
-    <string name="de_reduction_immediate">of immediate reduction</string>
-    <string name="par_tranche_de">by</string>
+    <string name="de_reduction_immediate">%1$d %% of immediate reduction</string>
+    <string name="euros_reduction_immediate">%1$d € of immediate reduction</string>
+    <string name="par_tranche_de">%1$d € by %2$d €</string>
     <string name="email">champigny.florent@gmail.com</string>
     <string name="name">Florent Champigny</string>
     <string name="books">Books</string>

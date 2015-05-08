@@ -14,8 +14,9 @@
     <string name="price">Prix</string>
     <string name="commander">COMMANDER</string>
     <string name="remove">Retirer</string>
-    <string name="de_reduction_immediate">de réduction immédiate</string>
-    <string name="par_tranche_de">par tranche de</string>
+    <string name="euros_reduction_immediate">%1$d € de réduction immédiate</string>
+    <string name="pourcent_de_reduction_immediate">%1$d %% de réduction immédiate</string>
+    <string name="par_tranche_de">%1$d € par tranche de %2$d €</string>
     <string name="email">champigny.florent@gmail.com</string>
     <string name="name">FlorentChampigny</string>
     <string name="books">Livres</string>
