@@ -11,7 +11,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".home.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +20,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DetailActivity"
+            android:name=".detail.DetailActivity"
             android:label="@string/book" >
         </activity>
         <activity
-            android:name=".PayActivity"
+            android:name=".pay.PayActivity"
             android:label="" >
         </activity>
 

@@ -1,7 +1,7 @@
 package com.github.florent37.xebia.webservice;
 
 import com.github.florent37.xebia.model.Book;
-import com.github.florent37.xebia.model.OfferEnvelope;
+import com.github.florent37.xebia.model.OfferContainer;
 
 import java.util.List;
 
@@ -15,12 +15,10 @@ import retrofit.http.Path;
  */
 public interface HenriPotierService {
 
-    public static final String ENDPOINT = "http://henri-potier.xebia.fr";
-
     @GET("/books")
-    public void getBooks(Callback<List<Book>> callback);
+    void getBooks(Callback<List<Book>> callback);
 
     @GET("/books/{isbns}/commercialOffers")
-    public void getCommercialOffers(@Path("isbns") String isbns, Callback<OfferEnvelope> callback);
+    void getCommercialOffers(@Path("isbns") String isbns, Callback<OfferContainer> callback);
 
 }

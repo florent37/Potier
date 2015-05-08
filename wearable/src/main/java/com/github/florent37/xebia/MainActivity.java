@@ -1,24 +1,14 @@
 package com.github.florent37.xebia;
 
 import android.app.Activity;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.wearable.view.DotsPageIndicator;
 import android.support.wearable.view.GridViewPager;
-import android.util.Log;
 
-import com.github.florent37.Emmet;
-import com.github.florent37.davinci.BitmapCallBack;
-import com.github.florent37.davinci.DaVinci;
+import com.github.florent37.emmet.Emmet;
 import com.github.florent37.xebia.wearprotocol.WearBook;
 import com.github.florent37.xebia.wearprotocol.WearProtocol;
 import com.github.florent37.xebia.wearprotocol.WearProtocolSmartphone;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.wearable.DataApi;
-import com.google.android.gms.wearable.DataEventBuffer;
-import com.google.android.gms.wearable.MessageApi;
-import com.google.android.gms.wearable.MessageEvent;
-import com.google.android.gms.wearable.Wearable;
 
 import java.util.List;
 

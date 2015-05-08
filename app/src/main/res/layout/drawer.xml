@@ -34,7 +34,7 @@
             android:paddingLeft="16sp"
             android:layout_alignParentBottom="true">
 
-            <com.github.florent37.xebia.view.TypefacedTextView
+            <com.github.florent37.xebia.ui.view.TypefacedTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -44,7 +44,7 @@
                 android:textColor="@android:color/white"
                 android:text="@string/name" />
 
-            <com.github.florent37.xebia.view.TypefacedTextView
+            <com.github.florent37.xebia.ui.view.TypefacedTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -73,7 +73,7 @@
             android:layout_gravity="center_vertical"
             android:src="@drawable/ic_book_black_48dp" />
 
-        <com.github.florent37.xebia.view.TypefacedTextView
+        <com.github.florent37.xebia.ui.view.TypefacedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -102,7 +102,7 @@
             android:layout_gravity="center_vertical"
             android:src="@drawable/ic_shopping_cart_black_48dp" />
 
-        <com.github.florent37.xebia.view.TypefacedTextView
+        <com.github.florent37.xebia.ui.view.TypefacedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -138,7 +138,7 @@
             android:layout_gravity="center_vertical"
             android:src="@drawable/ic_settings_grey600_48dp" />
 
-        <com.github.florent37.xebia.view.TypefacedTextView
+        <com.github.florent37.xebia.ui.view.TypefacedTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"

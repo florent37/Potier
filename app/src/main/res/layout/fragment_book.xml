@@ -32,7 +32,7 @@
                 android:layout_alignBottom="@+id/imageTop"
                 android:elevation="2dp" />
 
-            <com.github.florent37.xebia.view.TypefacedTextView
+            <com.github.florent37.xebia.ui.view.TypefacedTextView
                 android:id="@+id/textView"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -70,10 +70,12 @@
                 android:paddingBottom="15dp"
                 >
 
-                <com.github.florent37.xebia.view.TypefacedButton
+                <com.github.florent37.xebia.ui.view.TypefacedTextView
                     android:id="@+id/commandButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="4dp"
                     android:text="@string/commander"
                     android:layout_gravity="right"
                     android:background="@android:color/transparent"
@@ -97,7 +99,7 @@
                         android:layout_marginRight="10dp"
                         android:alpha="0.3" />
 
-                    <com.github.florent37.xebia.view.TypefacedTextView
+                    <com.github.florent37.xebia.ui.view.TypefacedTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:typeface="Roboto-Light.ttf"
@@ -105,7 +107,7 @@
                         android:textColor="#6333"
                         android:text="@string/price" />
 
-                    <com.github.florent37.xebia.view.TypefacedTextView
+                    <com.github.florent37.xebia.ui.view.TypefacedTextView
                         android:id="@+id/textViewPrice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -117,7 +119,7 @@
                         android:text="3€" />
                 </LinearLayout>
 
-                <com.github.florent37.xebia.view.TypefacedTextView
+                <com.github.florent37.xebia.ui.view.TypefacedTextView
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="15dp"
                     android:layout_width="match_parent"
@@ -127,7 +129,7 @@
                     android:textColor="#6333"
                     android:text="@string/description" />
 
-                <com.github.florent37.xebia.view.TypefacedTextView
+                <com.github.florent37.xebia.ui.view.TypefacedTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:typeface="Roboto-Regular.ttf"

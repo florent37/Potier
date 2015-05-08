@@ -16,14 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="80dp">
 
-        <com.github.florent37.xebia.view.SquareImageView
+        <com.github.florent37.xebia.ui.view.SquareImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:src="@drawable/hp0"
             android:scaleType="centerCrop" />
 
-        <com.github.florent37.xebia.view.TypefacedTextView
+        <com.github.florent37.xebia.ui.view.TypefacedTextView
             android:id="@+id/textViewPrice"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
             android:textSize="30sp"
             tools:text="3€" />
 
-        <com.github.florent37.xebia.view.TypefacedTextView
+        <com.github.florent37.xebia.ui.view.TypefacedTextView
             android:id="@+id/textView"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"

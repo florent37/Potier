@@ -38,7 +38,7 @@
             android:layout_gravity="bottom"
             android:padding="10sp">
 
-            <com.github.florent37.xebia.view.TypefacedTextView
+            <com.github.florent37.xebia.ui.view.TypefacedTextView
                 android:id="@+id/textView"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
