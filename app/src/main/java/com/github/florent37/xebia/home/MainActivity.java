@@ -20,16 +20,19 @@ import com.github.florent37.xebia.R;
 import com.github.florent37.xebia.home.parallax.ParallaxHeaderActivity;
 import com.github.florent37.xebia.home.parallax.ParallaxHelper;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 
 public class MainActivity extends ActionBarActivity implements ParallaxHeaderActivity, View.OnClickListener {
 
-    private Toolbar toolbar;
-    private DrawerLayout drawer;
+    @InjectView(R.id.toolbar) Toolbar toolbar;
+    @InjectView(R.id.drawer_layout) DrawerLayout drawer;
     private ActionBarDrawerToggle drawerToggle;
 
     private ParallaxHelper parallaxHelper;
 
-    private View fabPay;
+    @InjectView(R.id.fab_pay) View fabPay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +43,10 @@ public class MainActivity extends ActionBarActivity implements ParallaxHeaderAct
         }
 
         setContentView(R.layout.activity_main);
+        ButterKnife.inject(this);
 
         setTitle("");
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
 
@@ -57,7 +60,6 @@ public class MainActivity extends ActionBarActivity implements ParallaxHeaderAct
             }
         }
 
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerToggle = new ActionBarDrawerToggle(this, drawer, 0, 0);
         drawer.setDrawerListener(drawerToggle);
 
@@ -66,7 +68,6 @@ public class MainActivity extends ActionBarActivity implements ParallaxHeaderAct
         drawer.findViewById(R.id.drawer_pay).setOnClickListener(this);
         drawer.findViewById(R.id.drawer_settings).setOnClickListener(this);
 
-        fabPay = findViewById(R.id.fab_pay);
         fabPay.setOnClickListener(this);
 
         getSupportFragmentManager().beginTransaction()

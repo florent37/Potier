@@ -68,7 +68,7 @@ dependencies {
         transitive = true
         exclude group:"com.google.android.gms"
     }
-
+    compile 'com.jakewharton:butterknife:6.1.0'
     compile 'com.google.android.gms:play-services-wearable:6.5.87'
 
     compile project(':wearprotocol')

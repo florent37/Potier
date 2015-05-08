@@ -27,12 +27,15 @@ import com.github.florent37.xebia.home.task.GetBooksTask;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 /**
  * Created by florentchampigny on 27/04/15.
  */
 public class BookListFragment extends Fragment implements GetBooksTask.GetBooksTaskCallBack, BookAdapter.BookClickListener {
 
-    private RecyclerView recyclerView;
+    @InjectView(R.id.recyclerView) RecyclerView recyclerView;
     private BookAdapter adapter;
 
     private ParallaxHeaderActivity parallaxHeaderActivity;
@@ -60,7 +63,7 @@ public class BookListFragment extends Fragment implements GetBooksTask.GetBooksT
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        ButterKnife.inject(this,view);
 
         //display 3 cards on landscape / 2 on portrait
         {

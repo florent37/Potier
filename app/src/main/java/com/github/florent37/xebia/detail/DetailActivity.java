@@ -14,10 +14,12 @@ import android.view.MenuItem;
 import com.github.florent37.xebia.R;
 import com.github.florent37.xebia.model.Book;
 
+import butterknife.InjectView;
+
 
 public class DetailActivity extends ActionBarActivity {
 
-    private Toolbar toolbar;
+    @InjectView(R.id.toolbar) Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,6 @@ public class DetailActivity extends ActionBarActivity {
         //retrieve book from extra
         Book book = (Book) getIntent().getExtras().getSerializable(BookFragment.EXTRA_BOOK);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
 

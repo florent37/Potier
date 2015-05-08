@@ -9,18 +9,20 @@ import com.github.florent37.xebia.R;
 import com.github.florent37.xebia.model.Book;
 import com.squareup.picasso.Picasso;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 /**
  * Created by florentchampigny on 27/04/15.
  */
 public class BookViewHolder extends RecyclerView.ViewHolder{
 
-    private ImageView imageView;
-    private TextView textView;
+    @InjectView(R.id.imageView) ImageView imageView;
+    @InjectView(R.id.textView) TextView textView;
 
     public BookViewHolder(View itemView) {
         super(itemView);
-        this.imageView = (ImageView) itemView.findViewById(R.id.imageView);
-        this.textView = (TextView) itemView.findViewById(R.id.textView);
+        ButterKnife.inject(this,itemView);
     }
 
     public void bindBook(Book book){

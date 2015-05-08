@@ -17,6 +17,9 @@ import com.github.florent37.xebia.cart.Cart;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 /**
  * Created by florentchampigny on 27/04/15.
  */
@@ -25,10 +28,10 @@ public class BookFragment extends Fragment implements View.OnClickListener {
     public static final String EXTRA_BOOK = "EXTRA_BOOK";
     private Book book;
 
-    private TextView textView;
-    private TextView textViewPrice;
-    private ImageView imageView;
-    private Button commander;
+    @InjectView(R.id.textView) TextView textView;
+    @InjectView(R.id.textViewPrice) TextView textViewPrice;
+    @InjectView(R.id.imageView) ImageView imageView;
+    @InjectView(R.id.commandButton) TextView commander;
 
     private Cart cart;
 
@@ -72,10 +75,7 @@ public class BookFragment extends Fragment implements View.OnClickListener {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        textView = (TextView) view.findViewById(R.id.textView);
-        textViewPrice = (TextView) view.findViewById(R.id.textViewPrice);
-        imageView = (ImageView) view.findViewById(R.id.imageView);
-        commander = (Button) view.findViewById(R.id.commandButton);
+        ButterKnife.inject(this,view);
 
         textView.setText(book.getTitle());
         textViewPrice.setText(book.getPrice()+" €");

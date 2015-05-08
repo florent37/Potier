@@ -29,13 +29,16 @@ import com.github.florent37.xebia.pay.task.GetCommercialOffersTask;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 /**
  * Created by florentchampigny on 27/04/15.
  */
 public class PayFragment extends Fragment implements BookCommandAdapter.BookClickListener, GetCommercialOffersTask.GetCommercialOfferTaskCallBack {
 
     private static final String TAG = PayFragment.class.getSimpleName();
-    private RecyclerView recyclerView;
+    @InjectView(R.id.recyclerView) RecyclerView recyclerView;
     private BookCommandAdapter adapter;
 
     private Cart cart;
@@ -64,10 +67,9 @@ public class PayFragment extends Fragment implements BookCommandAdapter.BookClic
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ButterKnife.inject(this, view);
 
         getActivity().supportStartPostponedEnterTransition();
-
-        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
 
         final int numberPerLine = 1;
         GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), numberPerLine);

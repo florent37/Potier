@@ -12,10 +12,13 @@ import android.view.MenuItem;
 
 import com.github.florent37.xebia.R;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+
 
 public class PayActivity extends ActionBarActivity{
 
-    private Toolbar toolbar;
+    @InjectView(R.id.toolbar) Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +29,8 @@ public class PayActivity extends ActionBarActivity{
         }
 
         setContentView(R.layout.activity_pay);
+        ButterKnife.inject(this);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
             setSupportActionBar(toolbar);
 
